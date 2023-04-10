@@ -1,0 +1,64 @@
+﻿@model Project.Domain.DomainModels.ServiceDevice
+
+@{
+	ViewData["Title"] = "Edit";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>ServiceDevice</h4>
+<hr />
+<div class="row">
+	<div class="col-md-4">
+		<form asp-action="Edit" method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<input asp-for="Name" hidden class="form-control" />
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input asp-for="Model" hidden class="form-control" value="@Model.Model" />
+				<span asp-validation-for="Model" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input asp-for="UserMessage" hidden class="form-control" value="@Model.UserMessage" />
+				<span asp-validation-for="UserMessage" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="AdminMessage" class="control-label"></label>
+				<input asp-for="AdminMessage" class="form-control" />
+				<span asp-validation-for="AdminMessage" class="text-danger"></span>
+			</div>
+			
+			<div class="form-group">
+				<label asp-for="DateAdded" class="control-label"></label>
+				<input asp-for="DateAdded" class="form-control" value="@DateTime.Now" />
+				<span asp-validation-for="DateAdded" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="PriceForRepair" class="control-label"></label>
+				<input asp-for="PriceForRepair" class="form-control" />
+				<span asp-validation-for="PriceForRepair" class="text-danger"></span>
+			</div>
+
+			@*Maybe you change this to automatically make Status = Repaired after admin clicks save but leave it like this for now*@
+			<div class="form-group">
+				<label asp-for="Status" class="control-label"></label>
+				<select name="Status" id="Status" class="form-control">
+					<option>Repaired</option>
+					<option>Not Repaired</option>
+				</select>
+			</div>
+			<input type="hidden" asp-for="Id" />
+			<div class="form-group">
+				<input type="submit" value="Save" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<div>
+	<a asp-action="Index">Back to List</a>
+</div>
+

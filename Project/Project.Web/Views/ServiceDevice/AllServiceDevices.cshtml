@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Project.Domain.DomainModels.ServiceDevice>
+
+@{
+	ViewData["Title"] = "AllServiceDevices";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>All Service Devices</h1>
+
+@if (Model.Any())
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Name)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Model)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.UserMessage)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.AdminMessage)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Status)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.DateAdded)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.PriceForRepair)
+				</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Model)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.UserMessage)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.AdminMessage)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Status)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.DateAdded)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.PriceForRepair)
+					</td>
+					<td>
+						<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+else
+{
+	<h3>No devices in need of service</h3>
+}

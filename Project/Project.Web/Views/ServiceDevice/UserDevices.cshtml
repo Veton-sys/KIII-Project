@@ -1,0 +1,76 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<Project.Domain.StripeSettings> Stripe
+@model IEnumerable<Project.Domain.DomainModels.ServiceDevice>
+
+@{
+	ViewData["Title"] = "UserDevices";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>UserDevices</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Name)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Model)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.UserMessage)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Status)
+			</th>
+			<th>
+
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Model)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.UserMessage)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Status)
+				</td>
+				<td>
+					@if (item.Status == "Repaired")
+					{
+						@if (!item.PayedFor)
+						{
+							<form asp-controller="ServiceDevice" asp-action="PayDeviceToGetSolution" method="post">
+								<input hidden name="deviceId" id="deviceId" value="@item.Id" />
+								<article>
+									<script src="https://checkout.stripe.com/checkout.js"
+											class="stripe-button"
+											data-key="@Stripe.Value.PublishableKey"
+											data-locale="auto"
+											data-description="Project Application Payment"
+											data-amount="@(item.PriceForRepair * 100)"
+											data-label="Pay $@item.PriceForRepair"></script>
+								</article>
+							</form>
+						}
+						else
+						{
+							<a class="btn btn-primary" href="/ServiceDevice/CreateInvoice?deviceId=@item.Id">Get Solution</a>
+						}
+
+					}
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

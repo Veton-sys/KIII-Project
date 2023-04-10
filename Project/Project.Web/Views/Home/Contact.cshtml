@@ -1,0 +1,30 @@
+﻿@model List<Project.Domain.Identity.User>
+@{
+	ViewData["Title"] = "Contact";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Contact</h1>
+
+<div class="container">
+	<form asp-controller="Home" asp-action="Contact" method="post">
+		<input class="form-control mb-3"
+			   placeholder="Email Password Used For Authentication"
+			   type="password"
+			   name="userEmailPassword"
+			   id="userEmailPassword" />
+		<label for="adminEmail" class="h4">Administrators</label>
+		<select id="adminEmail" name="adminEmail" class="mb-3 form-control">
+			@foreach (var item in Model)
+			{
+				<option>@item.Email</option>
+			}
+		</select>
+		<label for="bodyMessage" class="h4">Message</label>
+		<textarea class="form-control" name="bodyMessage" id="bodyMessage"
+				  rows="5" cols="40"
+				  data-val-maxlength-max="5000"
+				  data-val="true"></textarea>
+		<button class="btn btn-primary my-3">Send Message</button>
+	</form>
+</div>
