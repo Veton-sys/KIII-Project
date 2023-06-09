@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Semestar 8\\Kiii\\Project\\GitLabProject\\kiii-final-update\\Project_181504\\Project\\Project.Domain\\Project.Domain.csproj": {}
+    "D:\\Semestar 10\\KIII\\Project\\KIII-Project\\Project\\Project.Domain\\Project.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Semestar 8\\Kiii\\Project\\GitLabProject\\kiii-final-update\\Project_181504\\Project\\Project.Domain\\Project.Domain.csproj": {
+    "D:\\Semestar 10\\KIII\\Project\\KIII-Project\\Project\\Project.Domain\\Project.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Semestar 8\\Kiii\\Project\\GitLabProject\\kiii-final-update\\Project_181504\\Project\\Project.Domain\\Project.Domain.csproj",
+        "projectUniqueName": "D:\\Semestar 10\\KIII\\Project\\KIII-Project\\Project\\Project.Domain\\Project.Domain.csproj",
         "projectName": "Project.Domain",
-        "projectPath": "D:\\Semestar 8\\Kiii\\Project\\GitLabProject\\kiii-final-update\\Project_181504\\Project\\Project.Domain\\Project.Domain.csproj",
+        "projectPath": "D:\\Semestar 10\\KIII\\Project\\KIII-Project\\Project\\Project.Domain\\Project.Domain.csproj",
         "packagesPath": "C:\\Users\\Veton\\.nuget\\packages\\",
-        "outputPath": "D:\\Semestar 8\\Kiii\\Project\\GitLabProject\\kiii-final-update\\Project_181504\\Project\\Project.Domain\\obj\\",
+        "outputPath": "D:\\Semestar 10\\KIII\\Project\\KIII-Project\\Project\\Project.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -55,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

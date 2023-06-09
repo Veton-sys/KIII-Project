@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q9edy58hqWXdIDUcoYwnK0CeGxh/B1xixVRoQCuFzMIfx0offcXbUDNXa2I9S7r3d6xHUSHvbkaVOsrsL+cjsA==",
+  "dgSpecHash": "pDwuKy/CtZ6HMRUP270KUvYp9+pE+vEy4SiXXxF0VxBj69WtzbBfhrknKvxLLZYwq69sgFAE+qw6QpWzF9ZMwA==",
   "success": true,
-  "projectFilePath": "D:\\Semestar 8\\Kiii\\Project\\GitLabProject\\kiii-final-update\\Project_181504\\Project\\Project.Web\\Project.Web.csproj",
+  "projectFilePath": "D:\\Semestar 10\\KIII\\Project\\KIII-Project\\Project\\Project.Web\\Project.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Veton\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
     "C:\\Users\\Veton\\.nuget\\packages\\documentformat.openxml\\2.7.2\\documentformat.openxml.2.7.2.nupkg.sha512",

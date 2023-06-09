@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vcp2QeF59Te/7fm2GwJw2CiAfwZwSom7mMRiKgeZqPlxhHBaZTqaz7GOwpzNEK3dWsCurZYDpnJdDSUWtIJQ+w==",
+  "dgSpecHash": "9qFxjtYjwzGguCowECDgNaFLwLlzgvz+Nfjo7qoxkq9w/rK5jkIGEsCgKKWKIh0mFiHc7CojHJ6pa1MDe33Zvg==",
   "success": true,
-  "projectFilePath": "D:\\Semestar 8\\Kiii\\Project\\GitLabProject\\kiii-final-update\\Project_181504\\Project\\Project.Domain\\Project.Domain.csproj",
+  "projectFilePath": "D:\\Semestar 10\\KIII\\Project\\KIII-Project\\Project\\Project.Domain\\Project.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Veton\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.15\\microsoft.aspnetcore.cryptography.internal.3.1.15.nupkg.sha512",
     "C:\\Users\\Veton\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.15\\microsoft.aspnetcore.cryptography.keyderivation.3.1.15.nupkg.sha512",
