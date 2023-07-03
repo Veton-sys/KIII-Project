@@ -2,8 +2,7 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\Veton\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Veton\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\Veton\\.nuget\\packages"
     ]
   }
 }

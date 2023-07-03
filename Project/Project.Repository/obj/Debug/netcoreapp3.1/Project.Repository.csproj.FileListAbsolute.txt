@@ -37,3 +37,16 @@ D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Projec
 D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.csproj.CopyComplete
 D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.dll
 D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.pdb
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\bin\Debug\netcoreapp3.1\Project.Repository.deps.json
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\bin\Debug\netcoreapp3.1\Project.Repository.dll
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\bin\Debug\netcoreapp3.1\Project.Repository.pdb
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\bin\Debug\netcoreapp3.1\Project.Domain.dll
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\bin\Debug\netcoreapp3.1\Project.Domain.pdb
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.csproj.AssemblyReference.cache
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.AssemblyInfoInputs.cache
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.AssemblyInfo.cs
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.csproj.CoreCompileInputs.cache
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.csproj.CopyComplete
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.dll
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Repository\obj\Debug\netcoreapp3.1\Project.Repository.pdb

@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-web-deployment
+  namespace: ns-web-app
+  labels:
+    app: mvc-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mvc-app
+  minReadySeconds: 30
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: mvc-app
+    spec:
+      containers:
+        - name: mvc-app
+          image: veton123/web_api:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+          env:
+          - name: CONNECTION_STRING
+            valueFrom:
+              secretKeyRef:
+                name: db-connstr-secret
+                key: CONN_STR
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mvc-service
+  namespace: ns-web-app
+  labels:
+    app: mvc-service
+spec:
+  type: ClusterIP
+  selector:
+    app: mvc-app
+  ports:
+    - protocol: TCP
+      port: 84
+      targetPort: 5000
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-connstr-secret
+  namespace: ns-web-app
+type: Opaque
+stringData:
+  CONN_STR: Data Source=db-headless-svc;Initial Catalog=IsProjectDb;User Id=sa;Password=A!VeryComplex123Password;

@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-headless-svc
+  namespace: ns-web-app
+spec:
+  type: ClusterIP
+  selector:
+    app: db-app
+  ports:
+  - protocol: TCP
+    port: 3200
+    targetPort: 1433
+    name: db-app
+  type: ClusterIP
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: db-statefulset
+  namespace: ns-web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db-app
+  serviceName: db-headless-svc
+  persistentVolumeClaimRetentionPolicy:
+    whenDeleted: Delete
+    whenScaled: Delete
+  template:
+    metadata:
+      labels:
+        app: db-app
+    spec:
+      containers:
+        - name: web-db
+          image: mcr.microsoft.com/mssql/server:latest
+          ports:
+            - containerPort: 1433
+              name: db-app
+          env:
+            - name: ACCEPT_EULA
+              value: "Y"
+            - name: SA_PASSWORD
+              value: "A!VeryComplex123Password"
+            - name: MSSQL_PID
+              value: "Express"
+          volumeMounts:
+            - name: db-data
+              mountPath: /var/opt/mssql
+  volumeClaimTemplates:
+    - metadata:
+        name: db-data
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 1Gi

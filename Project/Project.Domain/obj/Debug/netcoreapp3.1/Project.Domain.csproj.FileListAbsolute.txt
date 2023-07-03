@@ -28,3 +28,13 @@ D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Projec
 D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csproj.CoreCompileInputs.cache
 D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.dll
 D:\Semestar 8\Kiii\Project\GitLabProject\kiii-final-update\Project_181504\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.pdb
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.deps.json
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.dll
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.pdb
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csproj.AssemblyReference.cache
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfoInputs.cache
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfo.cs
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csproj.CoreCompileInputs.cache
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.dll
+D:\Semestar 10\KIII\Project\KIII-Project\Project\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.pdb

@@ -5,6 +5,7 @@ services:
         context: .
         dockerfile: Dockerfile
     container_name: web
+    restart: on-failure
     ports:
       - 5000:80
       - 5001:443
