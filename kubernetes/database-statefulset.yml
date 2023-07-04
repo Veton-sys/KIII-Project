@@ -9,7 +9,7 @@ spec:
     app: db-app
   ports:
   - protocol: TCP
-    port: 3200
+    port: 84
     targetPort: 1433
     name: db-app
   type: ClusterIP
